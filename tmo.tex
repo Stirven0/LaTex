@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{perspective}
+\geometry{letterpaper,margin=2cm} 
+\title{Tesis}
+
+\begin{document}
+\maketitle
+\section{Introduccion}
+esto es una prueba esto es una de las pruebas que estoy hacued
+\section{Contenido}
+\subsection*{America}
+
+La geografía de América es muy diversa y rica. América se divide en tres subcontinentes: \textbf{América del Norte, América Central y América del Sur.} Cada uno tiene sus propias características físicas, climáticas, culturales y políticas. América tiene una superficie de unos 42 millones de km2 y una población de unos 1000 millones de habitantes. Algunos de los países más grandes y conocidos de América son Estados Unidos, Canadá, México, Brasil, Argentina y Colombia.
+
+\subsubsection*{Mexico}
+
+México es un país muy diverso en su geografía. Tiene montañas, volcanes, desiertos, selvas, playas y lagos. Su territorio se extiende desde el océano Pacífico hasta el golfo de México y el mar Caribe. Su frontera norte es con Estados Unidos y su frontera sur es con Guatemala y Belice. México tiene una superficie de casi dos millones de kilómetros cuadrados y una población de más de 120 millones de habitantes.
+
+Algunos patlos típicos de México son:
+\begin{itemize}
+	\item Mole: la mole es un alimento de nos
+	\item Pozole
+	\item Tacos
+	\item Enchiladas
+	\item Chiles en nogada
+\end{itemize}
+
+Agunos de los de
+\subsubsection*{Colombia}
+
+Colombia es un país ubicado en el noroeste de Sudamérica, que limita con el océano Pacífico y el mar Caribe. Su territorio se divide en cinco regiones naturales: la cordillera de los Andes, la llanura amazónica, la llanura del Orinoco, la costa Caribe y la costa Pacífica. Cada una de estas regiones tiene una geografía diversa, con climas, relieves, suelos, hidrografía y vegetación propios. Colombia es uno de los países más biodiversos del mundo, con una gran variedad de ecosistemas y especies de flora y fauna.
+ 
+\begin{tikzpicture}
+    % Definir coordenadas
+    \coordinate (A) at (0,0);  % Punto A en el origen (0,0)
+    \coordinate (B) at (2,2);  % Punto B en (2,2)
+    
+    \node (C) at (2,0) {Nodo C};
+    
+    % Dibujar flecha desde A hasta B
+    \draw (A) -- (B) -- (C) -- cycle;  % Dibuja una flecha desde A a B
+    
+    % Etiquetar los puntos
+    \node at (A) [below left] {A};
+    \node at (B) [above right] {B};
+\end{tikzpicture}
+
+Algunos platos tipicos de Colombia son:
+\begin{itemize}
+    \item bandeja paisa
+    \item arepas 
+    \item lechona
+    \item ajiaco
+    \item sancocho
+    \item empanadas
+    \item tamal
+\end{itemize}
+\subsection{Europa}
+
+La geografía de Europa es muy diversa y rica. Europa tiene montañas, llanuras, islas, ríos y lagos. Algunos de los países más grandes de Europa son Rusia, Francia, España y Alemania. Europa también tiene una gran variedad de climas, desde el frío polar en el norte hasta el cálido mediterráneo en el sur. Europa es un continente con mucha historia, cultura y tradiciones.
+
+\subsubsection{España}
+España es un país situado al suroeste de Europa, que ocupa la mayor parte de la península ibérica. Tiene una superficie de 505.370 km2 y una población de unos 47 millones de habitantes. Su capital es Madrid y su idioma oficial es el español. España está formada por 17 comunidades autónomas y dos ciudades autónomas, que tienen un alto grado de autonomía política y cultural. España tiene una gran diversidad geográfica, con paisajes que van desde las montañas nevadas de los Pirineos y los Picos de Europa, hasta las playas soleadas del Mediterráneo y las islas Canarias. También cuenta con un rico patrimonio histórico y artístico, fruto de las diferentes culturas que han convivido en su territorio a lo largo de los siglos.
+
+\begin{tikzpicture}
+    % \coordinate (A) at (0,0);
+    % \coordinate (B) at (2,2);
+    % ($ (A) + {sin(60)}*(B) $)
+    % ($ (A)!r!(B) $)
+    % ($ (A)!3cm!70:(B) $)
+    
+    % \draw[] (A) -- (B);
+
+    
+    \draw[domain=-2:2,smooth,variable=\x] plot ({\x},{pow(\x,2)});
+
+\end{tikzpicture}
+
+Alguos platotipicos de España son:
+\begin{itemize}
+    \item paella
+    \item tortilla de patatas
+    \item gazpacho
+    \item croquetas
+    \item jamón ibérico
+    \item pulpo a la gallega
+\end{itemize}
+\subsubsection{Italia}
+
+
+\begin{tikzpicture}[scale=0.5,line join=round, line cap=round,declare function={f(\x,\y)=2*\x-\y;}]
+    
+    
+    \draw[-stealth] (-5,0,0) -- (5,0,0) node[right] {$X$};
+    \draw[-stealth] (0,-5,0) -- (0,5,0) node[above] {$Y$};
+    \draw[-stealth] (0,0,-5) -- (0,0,5) node[right] {$Z$};
+
+    \coordinate (A) at (3, 21, 2);
+    \coordinate (B) at (1, 21, 23);
+    \coordinate (C) at (4, 23, 1);
+
+    \fill (A) circle (2pt) node[above] {A};
+    \fill (B) circle (2pt) node[above] {B};
+    \fill (C) circle (2pt) node[above] {C};
+\end{tikzpicture}
+Italia es un país ubicado en el sur de Europa, que forma parte de la Unión Europea. Su territorio se divide en 20 regiones, cada una con su propia historia, cultura y paisaje. Italia tiene una forma alargada que se asemeja a una bota, y está rodeada por el mar Mediterráneo, el mar Adriático, el mar Tirreno y el mar Jónico. Al norte, limita con Francia, Suiza, Austria y Eslovenia, y alberga los Alpes, la cadena montañosa más alta de Europa. Italia también posee dos grandes islas: Sicilia y Cerdeña, así como varias islas menores. El clima de Italia varía según la zona: desde el frío alpino hasta el cálido mediterráneo, pasando por el templado continental. Italia es famosa por su riqueza artística, cultural y gastronómica, así como por su patrimonio natural y arqueológico.
+
+Algunos platos tipicos de españa son:
+\begin{itemize}
+    \item pizza
+    \item pasta
+    \item lasaña
+    \item risotto
+    \item gnocchi
+    \item tiramisú
+    \item gelato
+\end{itemize}
+\end{document}
